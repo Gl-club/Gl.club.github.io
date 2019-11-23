@@ -34,7 +34,7 @@
    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
    ym(55707982, "init", { 
-        clickmap:true,
+        clickmap:true,  
         trackLinks:true,
         accurateTrackBounce:true,
         webvisor:true
@@ -764,7 +764,7 @@ function gd_loadfile(fileId,mresp){
 						var total=a.totalSize || resp.fileSize || 0;//a.total
 						var current=a.position || a.loaded  || 0;
 						var c=_getid('gd_progress');
-						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'+number_format(99 000 000)+')';
+						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'+number_format(99,000,000)+')';
 					};
 					//xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
 				    xhr.onload = function(){
