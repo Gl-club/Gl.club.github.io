@@ -764,7 +764,7 @@ function gd_loadfile(fileId,mresp){
 						var total=a.totalSize || resp.fileSize || 0;//a.total
 						var current=a.position || a.loaded  || 0;
 						var c=_getid('gd_progress');
-						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'99,000,000';
+						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'99,000,000')';
 					};
 					//xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
 				    xhr.onload = function(){
