@@ -122,7 +122,7 @@ function init(){
 
 </table>
 
-<table id="maintable" width=770 align=center class="divopt" style="padding:7px 12px 7px 12px;border:0px solid black;">
+<table id="maintable" width=auto align=center class="divopt" style="padding:7px 12px 7px 12px;border:0px solid black;">
 <!--background: white;-webkit-box-shadow: 0 0 10px #999;	-moz-box-shadow: 0 0 10px #999; box-shadow: 0 0 10px #999;//-->
 
 
@@ -130,15 +130,17 @@ function init(){
 
 <tr><td align=center>
 <div style="margin-top:2px">
-<script type="text/javascript">
-google_ad_client = "ca-pub-1624796608287605";
-google_ad_slot = "8XXXXX1";
-google_ad_width = 728;
-google_ad_height = 90;
-</script>
-<script type="text/javascript"
-src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
+<style type="text/css">
+.adslot_1 { display:inline-block; width: 320px; height: 50px; }
+@media (max-width: 400px) { .adslot_1 { display: none; } }
+@media (min-width:500px) { .adslot_1 { width: 468px; height: 60px; } }
+@media (min-width:800px) { .adslot_1 { width: 728px; height: 90px; } }
+</style>
+<ins class="adsbygoogle adslot_1"
+   data-ad-client="ca-pub-1234"
+   data-ad-slot="5678"></ins>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script> 
 
 
 <tr><td align=center>
@@ -264,14 +266,14 @@ init2();
 
 
 <table style="white-space:nowrap"><tr>
-<td>Ширина<td><input type="range" id="size_width" min=100 max=900 step="1" value="540" style="width:150px;padding:0px;" onchange="size_width_onchange(this)">
-<td><input type=number id="size_width_n" style="width:65px" min=100 max=900 value="540" onchange="size_width_n_onchange(this)">
+<td>Ш<td><input type="range" id="size_width" min=100 max=900 step="1" value="540" style="width:40px;padding:0px;" onchange="size_width_onchange(this)">
+<td><input type=number id="size_width_n" style="width:45px" min=100 max=900 value="540" onchange="size_width_n_onchange(this)">
 <td>
-<td>Высота<td><input type="range" id="size_height" min=100 max=900 step="1" value="280" style="width:150px;padding:0px;" onchange="size_width_onchange(this)">
-<td><input type=number id="size_height_n" style="width:65px" min=100 max=900 value="280" onchange="size_width_n_onchange(this)">
-<td><button id="btn_save" disabled=true onclick='proc_save()' style="font-size:13px" title="Save and keep this game's width, height">Save Size</button>
+<td>В<td><input type="range" id="size_height" min=100 max=900 step="1" value="280" style="width:40px;padding:0px;" onchange="size_width_onchange(this)">
+<td><input type=number id="size_height_n" style="width:45px" min=100 max=900 value="280" onchange="size_width_n_onchange(this)">
+<td><button id="btn_save" disabled=true onclick='proc_save()' style="font-size:13px" title="Save and keep this game's width, height">S</button>
 <td>
-<td><button id="btn_refresh" disabled=true onclick='proc_refresh()' style="font-size:13px">Refresh</button>
+<td><button id="btn_refresh" disabled=true onclick='proc_refresh()' style="font-size:13px">R</button>
 <td><button id="btn_close" disabled=true onclick='proc_close()' style="font-size:13px">Close</button>
 </table>
 <div id='vphistory'></div>
@@ -288,19 +290,21 @@ init2();
 <!-- Put this div tag to the place, where the Comments block will be -->
 <div id="vk_comments"></div>
 <script type="text/javascript">
-VK.Widgets.Comments("vk_comments", {limit: 5, width: "760", attach: "*"});
+VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"});
 </script>
 
 <tr><td align=center>
-<script type="text/javascript">
-google_ad_client = "ca-pub-1624796608287605";
-google_ad_slot = "8XXXXX1";
-google_ad_width = 728;
-google_ad_height = 90;
-</script>
-<script type="text/javascript"
-src="//pagead2.googlesyndication.com/pagead/show_ads.js" onerror="gadb=true;">
-</script>
+<style type="text/css">
+.adslot_1 { display:inline-block; width: 320px; height: 50px; }
+@media (max-width: 400px) { .adslot_1 { display: none; } }
+@media (min-width:500px) { .adslot_1 { width: 468px; height: 60px; } }
+@media (min-width:800px) { .adslot_1 { width: 728px; height: 90px; } }
+</style>
+<ins class="adsbygoogle adslot_1"
+   data-ad-client="ca-pub-1234"
+   data-ad-slot="5678"></ins>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 <script>
 function size_width_onchange(f,nosize){
