@@ -277,18 +277,15 @@
 					<h2 class="withIcon">
 						<span>Найди Гачу Лайф под играми, это сложно, но будет сложнее...</span>
 					</h2>	
-	    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
-
-<!-- VK Widget -->
-<div id="vk_groups"></div>
-<script type="text/javascript">
-VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1}, 72812978);
-</script>
-        <!-- Put this script tag to the <head> of your page -->
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
-
-<script type="text/javascript">
-  VK.init({apiId: 6943911, onlyWidgets: true});
+	    <div id="vk_widget"></div>
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+<script>
+    function VK_Widget_Init(){
+        document.getElementById('vk_widget').innerHTML = '<div id="vk_groups"></div>';
+        VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "241", color1: "aa00ff", color2: "FFFFFF", color3: "FFFFFF"}, 72812978);
+    };
+    window.addEventListener('load', VK_Widget_Init, false);
+    window.addEventListener('resize', VK_Widget_Init, false);
 </script>
 
 <!-- Put this div tag to the place, where the Comments block will be -->
