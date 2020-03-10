@@ -501,35 +501,36 @@ img {
 <div>
 <p>За активность, позитив и интересные скриншоты, Оля назначена Модератором!</p>
 	
-	<div id="adv"></div>
+<div id="moevideo"></div>
+
 <script>
+
 var moevideoQueue = moevideoQueue || [];
+
 moevideoQueue.push(function () {
+
 moevideo.ContentRoll({
-  "mode": "manual",
-  "el": "#adv",
-  "ignorePlayers": true
-});
+
+mode:"manual",
+
+el:"#moevideo",
+
+floatWidth: "360",
+
+floatPosition:"bottom right",
+
+floatCloseTimeout: 10,
+
+ignorePlayers: true,
+
+floatMode:"full",
+
+maxRefresh: 10
+
 });
 
-</script>
-	
-	<script>
-    var moevideoQueue = moevideoQueue || [];
-    moevideoQueue.push(function () {
-        moevideo.ContentRoll({
-            mode: "auto" | "manual",
-            el: "CSS selector или id",
-            count: N,
-            chars: 800,
-            width: 400,
-            align: "left" | "center" | "right",
-            ignorePlayers: true | false,
-            callback: function (event, el) {
-                <!-- Ваш код -->
-            }
-        });
-    });
+});
+
 </script>
 	
 	
