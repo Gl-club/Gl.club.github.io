@@ -13,9 +13,10 @@
 <meta name="verify-admitad" content="e9c558eb18" />
 <script data-ad-client="ca-pub-1624796608287605" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	
+<script async src="https://moevideo.biz/embed/js/mvpt.min.js"></script>
 <script type="text/javascript" src="https://moe.video/js/replacer.js" async onload="MoeVideo.Wrapper({'pin':'37562601','nativeSize':true});"></script>
-	<script async src="https://moevideo.biz/embed/js/mvpt.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148576480-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -114,39 +115,20 @@ img {
 
 	
 <div id="moevideo"></div>
-
-<script>
-
+<script>    
 var moevideoQueue = moevideoQueue || [];
-
-moevideoQueue.push(function () {
-
-moevideo.ContentRoll({
-
-mode:"manual",
-
-el:"#moevideo",
-
-floatWidth: "360",
-
-floatPosition:"bottom right",
-
-floatCloseTimeout: 10,
-
-ignorePlayers: true,
-
-floatMode:"full",
-
-maxRefresh: 10
-  "callback": function(event) {if (event === 'error' || event === 'empty') {runStub();}}
-
-});
-
-});
-function runStub() {
-<iframe width="360" height="203" src="https://www.youtube.com/embed/videoseries?list=RDQMdKj8S8_UsiA&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-}
-
+    moevideoQueue.push(function () {
+        moevideo.ContentRoll({
+    mode:"manual",
+    el:"#moevideo",
+    floatWidth: "360",
+    floatPosition:"bottom right",
+    floatCloseTimeout: 10,
+    ignorePlayers: true,
+    floatMode:"full",
+    maxRefresh: 10
+    });
+   });
 </script>
 
 <p></p>
