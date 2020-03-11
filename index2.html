@@ -84,28 +84,13 @@ img {
 </style>
 
 <!-- <a href="https://tekaners.com/2-1a9n6-b5g-cghe-iwy"><img src="https://offergate.pro/content/ad436e0a8bcbf17c5de8ccd3730821ea.jpeg" title="White flower" alt="Flower"></a> -->
-<section id="output">
-<iframe width="360" height="203" src="https://www.youtube.com/embed/videoseries?list=RDQMdKj8S8_UsiA&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-</section>
 
-    <script>
-    this.render = function (code) {
+<iframe width="360" height="203" src="https://www.youtube.com/embed/videoseries?list=RDQMdKj8S8_UsiA&autoplay=1&loop=1?var=xxx" id="theframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
-    var source = prepareSource(code);
-
-    var placeholder = document.getElementById("output");
-    while (placeholder.firstChild) {
-        placeholder.removeChild(placeholder.firstChild);
-    }
-    var iframe = document.createElement("iframe");
-    placeholder.appendChild(iframe); 
-
-    var iframe_doc = iframe.contentDocument;
-    iframe_doc.open();
-    iframe_doc.write(source);
-    iframe_doc.close();
-}
-    </script>
+<script>
+var _theframe = document.getElementById("theframe");
+_theframe.contentWindow.location.href = _theframe.src;
+</script>
 	
 <div id="moevideo"></div>
 <script>    
