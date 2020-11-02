@@ -718,7 +718,7 @@ function gd_loadfile(fileId,mresp){
 					function setdown(url){
 						proc_loadgame(url, resp);						
 						if(downloadurl.indexOf('sample')==0 || resp.issample) return;
-						_getid("downlink").innerHTML='&nbsp;<a id="adownlink" style="font-size:16px">Download this file</a> ('+getsize(resp.fileSize)+') &nbsp; Добро пожаловать в Gacha Life ONLINE';
+						_getid("downlink").innerHTML='&nbsp;<a id="adownlink" style="font-size:16px">Download this file</a> ('+getsize(resp.fileSize)+') &nbsp; Добро пожаловать в Gacha Club ONLINE';
 						var a=_getid("adownlink");
 						if(a){
 							a.href=ourl;
@@ -782,7 +782,7 @@ function gd_loadfile(fileId,mresp){
 						var total=a.totalSize || resp.fileSize || 0;//a.total
 						var current=a.position || a.loaded  || 0;
 						var c=_getid('gd_progress');
-						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'+number_format(99.000.000)+')';
+						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'+number_format(99,000,000)+')';
 					};
 					//xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
 				    xhr.onload = function(){
