@@ -187,7 +187,7 @@ buttons {
 <script>document.getElementById("dfile1").innerHTML='<input type="file" id="fileload1" name="files[]" style="width:230px">';</script>			
 </table>
 </div>
-<div id="downlink" style="height:18px;margin-bottom:3px">Откройте мир Gacha Life ОНЛАЙН</div>
+<div id="downlink" style="height:18px;margin-bottom:3px">Откройте мир Gacha Club ОНЛАЙН</div>
 	
 <script>
 function proc_sample(filename){
@@ -670,7 +670,7 @@ function gd_pickercallback(data) {
 	}
 }
 function gd_loadfile(fileId,mresp){
-	if(gadb){alert('Пожалуйста выключите AdBlock, чтоб использовать бесплатно.');return;}	if(gd_isdownloading){
+	if(gadb){alert('Отключите AdBlock, для игры онлайн');return;}	if(gd_isdownloading){
 		alert("It's downloading. Please try again in a few minutes. or Cancel the current download.");
 		return;
 	}
@@ -682,7 +682,7 @@ function gd_loadfile(fileId,mresp){
 				hide_message();
 				var a=_getid("downlink");
 				if(a.innerHTML && a.innerHTML.indexOf("adownlink")<0){
-					_getid("downlink").innerHTML='Добро пожаловать в Gacha Life ONLINE';
+					_getid("downlink").innerHTML='Добро пожаловать в Gacha Club ONLINE';
 				}
 			}
 			function error(s){
@@ -782,7 +782,7 @@ function gd_loadfile(fileId,mresp){
 						var total=a.totalSize || resp.fileSize || 0;//a.total
 						var current=a.position || a.loaded  || 0;
 						var c=_getid('gd_progress');
-						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'+number_format(99,000,000)+')';
+						if(c) c.innerHTML='Установка... ('+number_format(current)+'/'+number_format(99.000.000)+')';
 					};
 					//xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
 				    xhr.onload = function(){
