@@ -10,9 +10,40 @@
      });
 </script>
 
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
 
+	<script id="chatBroEmbedCode">
+/* Chatbro Widget Embed Code Start */
+function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}
+/* Chatbro Widget Embed Code End */
+ChatbroLoader({encodedChatId: '46Qt5'});
+</script>
+	
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179612537-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179612537-1');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(67965262, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/67965262" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	
 <style>
 *{
 	font-size:14px;
@@ -94,11 +125,11 @@ function init(){
 <table align=center>
 <tr><td height=5>
 <tr><td align=center>
-	<a  style="color:#aa00ff"><span style="font-size:30px;font-family:Verdana, Arial">Гача Лайф ОНЛАЙН</span></a>
+	<a  style="color:#aa00ff"><span style="font-size:30px;font-family:Verdana, Arial">Играй в Гача Клуб ОНЛАЙН</span></a>
 <tr><td height=9>
 <tr><td height=5>
 <tr><td align=center>
-	<a  href="/" ><span style="font-size:30px;font-family:Verdana, Arial">Топ и чат Гача Лайф</span></a>
+	<!-- <a  href="/" ><span style="font-size:30px;font-family:Verdana, Arial">Топ и Чат Гача Лайф</span></a>-->
 
 </table>
 
@@ -124,10 +155,10 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <tr><td align=center>
 
 	<div style="font-size:16px;color:green;margin-top:2px;margin-bottom:3px">
-Требуется флеш плеер и безлимитный интернет.
+Требуется Флеш Плеер и безлимитный интернет.
 <!--&nbsp;<a href="#" onclick="proc_sample('sonicpacman.swf');return false;">Sample PacMan</a>//-->
 	</div>
-Проверьте&nbsp;<a href="https://galafe.github.io/" onclick="proc_sample('Tetris.swf');return false;">ТЕТРИС</a>
+Проверьте&nbsp;<a href="#" onclick="proc_sample('Tetris.swf');return false;">ТЕТРИС</a>
 &nbsp;перед установкой...
 
 
@@ -151,7 +182,7 @@ buttons {
 
 <div style="margin-top:2px;margin-bottom:1px">
 <table><tr>
-<td><buttons &nbsp; class="button" href="https://galafe.github.io/" onclick="proc_sample('GachaLife.swf');return false;" title="Запустить" style="font-size:15px" width=16 align="absmiddle">PLAY</buttons>
+<td><buttons &nbsp; class="button" href="#" onclick="proc_sample('GachaClub.swf');return false;" title="Запустить" style="font-size:15px" width=16 align="absmiddle">PLAY</buttons>
 
 <script>document.getElementById("dfile1").innerHTML='<input type="file" id="fileload1" name="files[]" style="width:230px">';</script>			
 </table>
@@ -163,7 +194,7 @@ function proc_sample(filename){
 	var resp={};
 	resp.id='(Sample) '+filename;
 	resp.title=resp.id;
-	resp.downloadUrl="https://galafe.github.io/"+filename;
+	resp.downloadUrl="https://gachalife.online/"+filename;
 	resp.issample=true;
 	gd_loadfile('',resp);
 }
